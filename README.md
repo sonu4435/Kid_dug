@@ -2,8 +2,6 @@
 
 kidDug is an interactive Next.js web application designed to make learning fun and engaging for children. The platform focuses on teaching kids about alphabets, animals, foods, and more through a creative and interactive experience.
 
-**Live Demo:** [kidDug Live Demo](https://your-live-demo-url)
-
 ## Features
 
 - **Alphabet Learning:** Kids can easily learn the alphabet by interacting with the AI. Just type a letter, and the AI will generate a colorful card representing an object starting with that letter.
