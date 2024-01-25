@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/auth/about", "app/auth/pricing", "components/auth.config.js", "components/provider/_app.tsx", "app/api/auth/[...nextauth]/authOptions", "app/api/razorpay/razorpay.js", "app/(public)/_components/Design.jsx", ".next/types/app/api/OpenAi/route.tsx"],
   "exclude": ["node_modules"]
 }
