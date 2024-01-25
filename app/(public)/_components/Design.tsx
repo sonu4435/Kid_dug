@@ -25,7 +25,6 @@ import {
   WithUser,
   useUser
 } from "@clerk/nextjs";
-import SignOutButton  from "../signout/page";
 
 const Design = () => {
   const [dataObjects, setDataObjects] = useState([
@@ -403,7 +402,7 @@ const Design = () => {
                       {isLoaded ? "Log In" : "Loading..."}
                     </SignInButton>
                   ) : (
-                    <SignOutButton />
+                    <Button variant={"ghost"}>SignOut</Button>
                   )}
                 </span>
               </a>
