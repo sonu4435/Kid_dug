@@ -31,7 +31,7 @@ const Design = () => {
     {
       text: "This is a Defaulf Image Prompt",
       imageUrl:
-        "https://stars-test.s3.amazonaws.com/free-prod/b1672c5d-dc47-4004-a33c-53fb85e5846b-0.png"
+        "/cretate-a-card-of-a-panda-for-kids-to-learn-178888316.png"
     }
   ]);
   const [selectedOption, setSelectedOption] = useState(
