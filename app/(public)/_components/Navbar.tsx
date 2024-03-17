@@ -160,6 +160,11 @@ const Navbar = () => {
           {/* after Logo NavBar for large desices styling Div starts */}
           <div className="navItems hidden sm:hidden xl:flex items-center justify-around p-10">
             <li className="p-3">
+              <Link href="/privecy" className="cursor-pointer">
+                Privecy & Policy
+              </Link>
+            </li>
+            <li className="p-3">
               <a
                 href="#!"
                 className={cn(

@@ -60,22 +60,22 @@ const Design = () => {
     setSelectedOption(selectedModel);
 
     const ApiReqImage = async (Userdata: any) => {
-  return new Promise((resolve, reject) => {
-    const novitaClient = new NovitaSDK("9cafa38d-d5f0-497f-85b9-ba29428f17bb");
-    const params = {
-      model_name:
-        "protovisionXLHighFidelity3D_release0630Bakedvae_154359.safetensors", // Use the selected option value here
-      prompt: `a ${Userdata} card for kids with ${selectedOption != null ? selectedOption : "CyberPunk"  } effect`,
-      negative_prompt: "",
-      width: 256,
-      height: 312,
-      sampler_name: "DPM++ 2M Karras",
-      cfg_scale: 5,
-      steps: 20,
-      batch_size: 1,
-      n_iter: 1,
-      seed: 3949238699
-    };
+      return new Promise((resolve, reject) => {
+        const novitaClient = new NovitaSDK("28f3c035-1ee4-4ed4-9265-502bfb443055");
+        const params = {
+          model_name:
+            "protovisionXLHighFidelity3D_release0630Bakedvae_154359.safetensors", // Use the selected option value here
+          prompt: `a ${Userdata} card for kids with ${selectedOption != null ? selectedOption : "CyberPunk"} effect`,
+          negative_prompt: "",
+          width: 256,
+          height: 312,
+          sampler_name: "DPM++ 2M Karras",
+          cfg_scale: 5,
+          steps: 20,
+          batch_size: 1,
+          n_iter: 1,
+          seed: 3949238699
+        };
 
         novitaClient
           .txt2Img(params)
@@ -98,7 +98,7 @@ const Design = () => {
                       resolve({ success: false, error: progressRes }); // Resolve with an object indicating failure
                     }
                     if (progressRes.status === 1) {
-                     setLoading(true);
+                      setLoading(true);
                     }
                   })
                   .catch((err) => {
